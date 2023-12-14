@@ -70,5 +70,8 @@ int main(){
 
     agregarAsistencia(&estudiante, "2023-12-01", "Ingles", "Asiste");
     agregarAsistencia(&estudiante, "2023-11-13", "Informatica", "Falta");
+    mostrarEstudiante(&estudiante);
+
+    return 0;
 
 }
