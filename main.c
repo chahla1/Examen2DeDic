@@ -14,7 +14,22 @@ struct Asistencia {
     char materia[50];
     char estado[20];  // "Asiste", "Falta", "Tarde"
 };
+struct Estudiante {
+    char nombre[50];
+    int edad;
+    float promedio;
+    struct Materia materias[MAX_MATERIAS];
+    struct Asistencia asistencias[MAX_ASISTENCIAS];
+    int numMaterias;
+    int numAsistencias;
+};
+void mostrarEstudiante(const struct Estudiante* estudiante) {
+    printf("Nombre: %s\nEdad: %d\nPromedio: %.2f\n", estudiante->nombre, estudiante->edad, estudiante->promedio);
 
+    printf("Materias:\n");
+    for (int i = 0; i < estudiante->numMaterias; ++i) {
+        printf("  - %s: %.2f\n", estudiante->materias[i].nombre, estudiante->materias[i].calificacion);
+    }
 
 
 
