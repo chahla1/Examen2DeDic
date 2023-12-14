@@ -52,9 +52,10 @@ public:
             estudiante.agregarMateria("Informatica", 6.3);
             estudiante.agregarAsistencia("2023-12-01", "Ingles", "Asiste");
             estudiante.agregarAsistencia("2023-11-13", "Informatica", "Falta");
-
-
-
+            estudiante.mostrarEstudiante();
+        } catch (const std::exception& e) {
+            std::cerr << "Error: " << e.what() << std::endl;
         }
+
     return 0;
 }
