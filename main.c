@@ -30,6 +30,14 @@ void mostrarEstudiante(const struct Estudiante* estudiante) {
     for (int i = 0; i < estudiante->numMaterias; ++i) {
         printf("  - %s: %.2f\n", estudiante->materias[i].nombre, estudiante->materias[i].calificacion);
     }
+    printf("Asistencias:\n");
+    for (int i = 0; i < estudiante->numAsistencias; ++i) {
+        printf("  - Fecha: %s, Materia: %s, Estado: %s\n",
+               estudiante->asistencias[i].fecha, estudiante->asistencias[i].materia,
+               estudiante->asistencias[i].estado);
+    }
+}
+
 
 
 
