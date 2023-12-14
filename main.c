@@ -65,5 +65,10 @@ int main(){
     estudiante.promedio = 7.7;
     estudiante.numMaterias = 6;
     estudiante.numAsistencias = 10;
+    agregarMateria(&estudiante, "Ingles", 9.0);
+    agregarMateria(&estudiante, "Informatica", 6.3);
+
+    agregarAsistencia(&estudiante, "2023-12-01", "Ingles", "Asiste");
+    agregarAsistencia(&estudiante, "2023-11-13", "Informatica", "Falta");
 
 }
