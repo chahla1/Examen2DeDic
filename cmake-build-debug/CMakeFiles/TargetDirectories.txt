@@ -1,0 +1,3 @@
+C:/Users/chahla/CLionProjects/Examen2EnC/cmake-build-debug/CMakeFiles/Examen2EnC.dir
+C:/Users/chahla/CLionProjects/Examen2EnC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/chahla/CLionProjects/Examen2EnC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
