@@ -58,8 +58,12 @@ void agregarAsistencia(struct Estudiante* estudiante, const char* fecha, const c
 }
 
 
-
-
 int main(){
+    struct Estudiante estudiante;
+    strcpy(estudiante.nombre, "Chahla");
+    estudiante.edad = 19;
+    estudiante.promedio = 7.7;
+    estudiante.numMaterias = 6;
+    estudiante.numAsistencias = 10;
 
 }
