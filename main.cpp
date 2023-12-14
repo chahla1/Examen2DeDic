@@ -32,6 +32,13 @@ public:
                       << ", Estado: " << asistencia.estado << "\n";
         }
     }
+    void agregarMateria(const std::string& nombre, float calificacion) {
+        materias.push_back({nombre, calificacion});
+    }
+    void agregarAsistencia(const std::string& fecha, const std::string& materia, const std::string& estado) {
+        asistencias.push_back({fecha, materia, estado});
+    }
+};
 
 
 
