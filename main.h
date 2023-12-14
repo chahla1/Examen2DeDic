@@ -1,4 +1,10 @@
-// main.h
+#ifndef MAIN_H
+#define MAIN_H
+
+// Contenido de main.h
+
+#endif //MAIN_H
+
 
 #ifdef __cplusplus
 #include <iostream>
