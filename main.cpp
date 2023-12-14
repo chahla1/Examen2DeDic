@@ -48,8 +48,13 @@ public:
             estudiante.nombre = "Chahla";
             estudiante.edad = 19;
             estudiante.promedio = 7.7;
+            estudiante.agregarMateria("Ingles", 9.0);
+            estudiante.agregarMateria("Informatica", 6.3);
+            estudiante.agregarAsistencia("2023-12-01", "Ingles", "Asiste");
+            estudiante.agregarAsistencia("2023-11-13", "Informatica", "Falta");
 
 
-    }
+
+        }
     return 0;
 }
