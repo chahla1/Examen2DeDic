@@ -43,6 +43,13 @@ public:
 
 
     int main(){
+        try {
+            Estudiante estudiante;
+            estudiante.nombre = "Chahla";
+            estudiante.edad = 19;
+            estudiante.promedio = 7.7;
+
 
     }
+    return 0;
 }
