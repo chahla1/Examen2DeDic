@@ -37,7 +37,25 @@ void mostrarEstudiante(const struct Estudiante* estudiante) {
                estudiante->asistencias[i].estado);
     }
 }
-
+void agregarMateria(struct Estudiante* estudiante, const char* nombre, float calificacion) {
+    if (estudiante->numMaterias < MAX_MATERIAS) {
+        strcpy(estudiante->materias[estudiante->numMaterias].nombre, nombre);
+        estudiante->materias[estudiante->numMaterias].calificacion = calificacion;
+        estudiante->numMaterias++;
+    } else {
+        fprintf(stderr, "Se ha alcanzado el limite de materias\n");
+    }
+}
+void agregarAsistencia(struct Estudiante* estudiante, const char* fecha, const char* materia, const char* estado) {
+    if (estudiante->numAsistencias < MAX_ASISTENCIAS) {
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].fecha, fecha);
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].materia, materia);
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].estado, estado);
+        estudiante->numAsistencias++;
+    } else {
+        fprintf(stderr, "Se ha alcanzado el limite de asistencias\n");
+    }
+}
 
 
 
